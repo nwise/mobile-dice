@@ -1,4 +1,4 @@
-class D6LabelBuilder
+class DiceLabelBuilder
 
   def self.build
     @label = UILabel.new
