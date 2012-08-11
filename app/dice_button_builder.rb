@@ -1,9 +1,9 @@
 class DiceButtonBuilder
 
-  def self.build
+  def self.build(options)
     @button = UIButton.buttonWithType(UIButtonTypeRoundedRect)
-    @button.setTitle('Roll', forState:UIControlStateNormal)
-    @button.frame = [[20, 30], [50, 40]]
+    @button.setTitle(options[:text], forState:UIControlStateNormal)
+    @button.frame = options[:dimensions]
     return @button
   end
 

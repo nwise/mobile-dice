@@ -1,13 +1,14 @@
 class DiceLabelBuilder
 
-  def self.build
+  def self.build(options)
+    puts options
     @label = UILabel.new
     @label.font = UIFont.systemFontOfSize(30)
-    @label.text = 'd6'
+    @label.text = options[:text]
     @label.textAlignment = UITextAlignmentCenter
     @label.textColor = UIColor.whiteColor
     @label.backgroundColor = UIColor.clearColor
-    @label.frame = [[20 + 60, 30], [80, 40]]
+    @label.frame = options[:dimensions]
     return @label
   end
 
