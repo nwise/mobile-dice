@@ -1,10 +1,9 @@
 class DiceLabelBuilder
 
   def self.build(options)
-    puts options
     @label = UILabel.new
     @label.font = UIFont.systemFontOfSize(30)
-    @label.text = options[:text]
+    @label.text = "Roll"
     @label.textAlignment = UITextAlignmentCenter
     @label.textColor = UIColor.whiteColor
     @label.backgroundColor = UIColor.clearColor

@@ -1,0 +1,3 @@
+class DieView
+
+end
